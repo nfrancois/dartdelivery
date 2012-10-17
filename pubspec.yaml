@@ -1,0 +1,4 @@
+name: dartdelivery
+description: Dartdelivery, dart web demo from github to heroku by drone.io
+dependencies: 
+  unittest: { sdk: unittest }
