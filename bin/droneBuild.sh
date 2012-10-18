@@ -6,6 +6,7 @@ git remote add herokuSync git@heroku.com:dartdelivery.git
 git remote -v
 git fetch herokuSync
 git merge herokuSync/master
+git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
 
 # Clean
 echo 'Clean...'
@@ -25,7 +26,6 @@ bin/buildjs.sh
 # Add compiled files to deploy
 echo 'Prepare to deploy...'
 git status -s
-git log HEAD..herokuSync/master
 if [ -f .gitignore ]; then
   rm .gitignore
 fi
