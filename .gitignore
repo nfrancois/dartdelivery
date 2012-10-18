@@ -1,4 +1,5 @@
+.project
 *.lock
 packages
 *.dart.js
-.project
+*.dart.js.map
