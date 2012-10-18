@@ -1,1 +1,1 @@
-web: bin/herokuStart.sh
+web: dart web/server.dart
