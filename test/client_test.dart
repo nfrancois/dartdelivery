@@ -1,7 +1,7 @@
 library dart_delivert_client_test;
 
 import 'package:unittest/unittest.dart';
-import '../web/client/client_core.dart';
+import '../web/client/public/client_core.dart';
   
 main(){
   print("Running tests...");
