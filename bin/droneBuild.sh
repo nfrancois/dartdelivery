@@ -13,8 +13,8 @@ echo 'Clean...'
 if [ -f packages ]; then
   rm -rf packages
 fi
-if [ -f packages ]; then
-  rm web/client/public/client.dart.js
+if [ -f web/client/public/client.dart.* ]; then
+  rm web/client/public/client.dart.*
 fi
 
 # Build
@@ -25,9 +25,12 @@ bin/buildjs.sh
 
 # Add compiled files to deploy
 echo 'Prepare to deploy...'
-git status -s
 if [ -f .gitignore ]; then
   rm .gitignore
 fi
-git add -A
-git commit -m "compiled files"
+STATUS=`git status -s`
+if [ "$STATUS" != "" ] ; then
+echo 'commit'
+  git add -A
+  git commit -m "compiled files"
+fi
