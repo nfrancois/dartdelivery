@@ -5,7 +5,7 @@ git config --global user.name "DroneIO"
 git remote add herokuSync git@heroku.com:dartdelivery.git
 git remote -v
 git fetch herokuSync
-git rebase herokuSync/master
+git merge herokuSync/master
 
 # Clean
 echo 'Clean...'
