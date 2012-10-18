@@ -24,7 +24,7 @@ bin/buildjs.sh
 
 # Add compiled files to deploy
 echo 'Prepare to deploy...'
-git log HEAD..origin/master
+git log HEAD..herokuSync/master
 if [ -f .gitignore ]; then
   rm .gitignore
 fi
