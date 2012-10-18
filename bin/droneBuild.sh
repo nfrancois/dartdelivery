@@ -1,5 +1,5 @@
 # Syncho
-echo 'Syncho...
+echo 'Syncho...'
 git config --global user.email "drone.io@haha.ha"
 git config --global user.name "DroneIO"
 git remote add herokuSync git@heroku.com:dartdelivery.git
