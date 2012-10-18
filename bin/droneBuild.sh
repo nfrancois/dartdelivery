@@ -24,10 +24,10 @@ bin/buildjs.sh
 
 # Add compiled files to deploy
 echo 'Prepare to deploy...'
+git status -s
 git log HEAD..herokuSync/master
 if [ -f .gitignore ]; then
   rm .gitignore
 fi
-git status -s
 git add -A
 git commit -m "compiled files"
