@@ -1,2 +1,1 @@
-dart2js: bin/buildjs.sh
-web: dart web/server.dart
+web: bin/buildjs.sh && dart web/server.dart
