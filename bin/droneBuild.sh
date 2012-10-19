@@ -5,7 +5,7 @@ git config --global user.name "DroneIO"
 git remote add herokuSync git@heroku.com:dartdelivery.git
 git remote -v
 git fetch herokuSync
-git merge herokuSync/master
+git rebase herokuSync/master
 git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
 
 # Clean
