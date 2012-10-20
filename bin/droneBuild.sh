@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Syncho
 echo 'Syncho...'
 git config --global user.email "drone.io@haha.ha"
